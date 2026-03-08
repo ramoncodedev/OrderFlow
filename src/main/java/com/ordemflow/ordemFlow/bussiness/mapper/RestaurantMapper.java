@@ -1,8 +1,8 @@
-package com.ordemflow.ordemFlow.bussines.mapper;
+package com.ordemflow.ordemFlow.bussiness.mapper;
 
 
-import com.ordemflow.ordemFlow.bussines.DTOs.RestaurantRequest;
-import com.ordemflow.ordemFlow.bussines.DTOs.RestaurantResponse;
+import com.ordemflow.ordemFlow.bussiness.DTOs.RestaurantRequest;
+import com.ordemflow.ordemFlow.bussiness.DTOs.RestaurantResponse;
 import com.ordemflow.ordemFlow.infrastructure.Entity.Restaurant;
 import lombok.experimental.UtilityClass;
 
@@ -11,6 +11,7 @@ public class RestaurantMapper {
 
     public Restaurant toConvert(RestaurantRequest restaurantRequest){
         return Restaurant.builder()
+                .name(restaurantRequest.name())
                 .email(restaurantRequest.email())
                 .phone(restaurantRequest.phone())
                 .description(restaurantRequest.description())

@@ -1,4 +1,4 @@
-package com.ordemflow.ordemFlow.bussines.DTOs;
+package com.ordemflow.ordemFlow.bussiness.DTOs;
 
 import com.ordemflow.ordemFlow.infrastructure.Entity.Address;
 

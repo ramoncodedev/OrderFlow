@@ -38,7 +38,8 @@ public class Restaurant {
     @Column(name = "imagem_url")
     private String imagemUrl;
 
-    @OneToOne(mappedBy = "restaurant", cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "address_id")
     private Address address;
 
     @Column(name = "active", nullable = false, updatable = false)

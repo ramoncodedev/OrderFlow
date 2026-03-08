@@ -1,4 +1,4 @@
-package com.ordemflow.ordemFlow.bussines.service;
+package com.ordemflow.ordemFlow.bussiness.service;
 
 import com.ordemflow.ordemFlow.infrastructure.Entity.Restaurant;
 import com.ordemflow.ordemFlow.infrastructure.exception.ResourceNotFoundException;
@@ -19,7 +19,10 @@ public class RestaurantService {
     public Restaurant saveRestaurant(Restaurant restaurant) {
 
         existsByEmail(restaurant.getEmail());
+
         return restaurantRepository.save(restaurant);
+
+
     }
 
     // metodo void para verificar se o email já existe!!

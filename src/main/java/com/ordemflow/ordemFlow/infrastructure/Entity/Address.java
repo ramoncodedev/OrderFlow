@@ -38,7 +38,5 @@ public class Address {
     @Column(name = "cep",length = 150, nullable = false)
    private String cep;
 
-   @OneToOne
-   @JoinColumn(name = "Restaurant_id")
-   private Restaurant restaurant;
+
 }
