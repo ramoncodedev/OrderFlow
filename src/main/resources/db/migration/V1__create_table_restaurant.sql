@@ -1,0 +1,10 @@
+CREATE TABLE restaurant(
+id serial PRIMARY KEY,
+name VARCHAR(100) NOT NULL,
+description VARCHAR(260) NOT NULL,
+phone VARCHAR(15) NOT NULL,
+email VARCHAR(50) NOT NULL,
+active BOOLEAN DEFAULT TRUE,
+createdAt TIMESTAMP
+
+);

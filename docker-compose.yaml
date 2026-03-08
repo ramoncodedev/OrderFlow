@@ -1,7 +1,6 @@
-version: "3.8"
 services:
   ordemflow:
-    image: postgres:16-alpine
+    image: postgres:15-alpine
     container_name: ordemflow
     environment:
       POSTGRES_DB: ordemflow_db
