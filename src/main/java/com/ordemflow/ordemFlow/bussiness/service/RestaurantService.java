@@ -25,14 +25,14 @@ public class RestaurantService {
 
     }
 
-    // metodo void para verificar se o email já existe!!
+
     public void existsByEmail(String email) {
         if (verificarEmailExistente(email)) {
             throw new conflictionException("O email " + email + "já está em uso.");
         }
     }
 
-    //chamando o metodo findByEmail da repository
+
     public boolean verificarEmailExistente(String email) {
         return restaurantRepository.existsByEmail(email);
     }

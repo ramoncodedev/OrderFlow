@@ -1,8 +1,8 @@
 package com.ordemflow.ordemFlow.bussiness.controllers;
 
 
-import com.ordemflow.ordemFlow.bussiness.DTOs.RestaurantRequest;
-import com.ordemflow.ordemFlow.bussiness.DTOs.RestaurantResponse;
+import com.ordemflow.ordemFlow.bussiness.DTOs.request.RestaurantRequest;
+import com.ordemflow.ordemFlow.bussiness.DTOs.response.RestaurantResponse;
 import com.ordemflow.ordemFlow.bussiness.mapper.RestaurantMapper;
 import com.ordemflow.ordemFlow.bussiness.service.RestaurantService;
 import com.ordemflow.ordemFlow.infrastructure.Entity.Restaurant;

@@ -32,6 +32,9 @@ public class Restaurant {
     @Column(name = "phone", length = 15,nullable = false)
     private String phone;
 
+    @Enumerated(EnumType.STRING)
+    private Typedocument typedocument;
+
     @Column(name = "email",length = 50,nullable = false)
     private String email;
 

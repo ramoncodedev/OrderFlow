@@ -1,8 +1,8 @@
 package com.ordemflow.ordemFlow.bussiness.mapper;
 
 
-import com.ordemflow.ordemFlow.bussiness.DTOs.RestaurantRequest;
-import com.ordemflow.ordemFlow.bussiness.DTOs.RestaurantResponse;
+import com.ordemflow.ordemFlow.bussiness.DTOs.request.RestaurantRequest;
+import com.ordemflow.ordemFlow.bussiness.DTOs.response.RestaurantResponse;
 import com.ordemflow.ordemFlow.infrastructure.Entity.Restaurant;
 import lombok.experimental.UtilityClass;
 
@@ -16,6 +16,7 @@ public class RestaurantMapper {
                 .phone(restaurantRequest.phone())
                 .description(restaurantRequest.description())
                 .imagemUrl(restaurantRequest.imagemUrl())
+                .typedocument(restaurantRequest.typedocument())
                 .createdAt(restaurantRequest.createdAt())
                 .address(restaurantRequest.address())
                 .build();
@@ -29,6 +30,7 @@ public class RestaurantMapper {
                 .phone(restaurant.getPhone())
                 .email(restaurant.getEmail())
                 .description(restaurant.getDescription())
+                .typedocument(restaurant.getTypedocument())
                 .imagemUrl(restaurant.getImagemUrl())
                 .active(restaurant.isActive())
                 .address(restaurant.getAddress())
