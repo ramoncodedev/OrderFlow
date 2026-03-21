@@ -15,7 +15,7 @@ incluindo autenticação, autorização e regras de negócio realistas.
 - Spring Security
 - Spring Data JPA
 - JWT autenthication
-- Mysql
+- Postgres
 - Docker
 
 ## Tipos de funcionarios
